@@ -1,0 +1,11 @@
+export FC=xlf90_r # Can also use xlcuf
+export SUCCESS_STRING=""__test_success__""
+export CUSTOM_CMAKE_FLAGS='-DCUSTOM_CMAKE_Fortran_FLAGS="-qcuda"'
+export MPIRUN_FLAGS="-gpu"
+export USE_MPS=true
+export NUM_RANKS=16
+export RANKS_PER_NODE=16
+module load xl
+module load spectrum_mpi
+module load cmake
+module load cuda
