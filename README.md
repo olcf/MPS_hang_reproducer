@@ -10,5 +10,5 @@ $ make
 
 ## To run(MPS must be enabled):
 ```
-$ mpirun -gpu -n 2 --map-by ppr:2:node ./Collective
+$ mpirun -gpu -n 16 --map-by ppr:16:node ./Collective
 ```
